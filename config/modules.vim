@@ -5,13 +5,13 @@ let g:rails_default_file='config/database.yml'
 let g:gist_clip_command = 'xclip -selection clipboard'
 let g:gist_detect_filetype = 1
 let g:gist_open_browser_after_post = 1
-let g:gist_browser_command = 'firefox %URL%'
+let g:gist_browser_command = 'open %URL%'
 
 " Scratch 
 let g:scratch_file="~/.vim/scratch"
 
 " TagList 
-let Tlist_Ctags_Cmd='/usr/bin/ctags' " point taglist to ctags
+"let Tlist_Ctags_Cmd='/usr/bin/ctags' " point taglist to ctags
 let Tlist_GainFocus_On_ToggleOpen = 1 " Focus on the taglist when its toggled
 let Tlist_Close_On_Select = 1 " Close when something's selected
 let Tlist_Use_Right_Window = 1 " Project uses the left window

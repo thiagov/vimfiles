@@ -43,3 +43,8 @@
     " HTML  
     """"""""""""""""""""""""""""
     autocmd FileType html,xhtml set ai sw=4 st=4 ts=4 et
+
+    """"""""""""""""""""""""""""
+    " JAVA
+    """"""""""""""""""""""""""""
+    autocmd FileType java set ai sw=4 st=4 ts=4 et

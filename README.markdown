@@ -1,22 +1,34 @@
 # Installation
 
 1. Install ctags:
-  `sudo apt-get install exuberant-ctags`
+  ```
+  sudo apt-get install exuberant-ctags
+  ```
 
 2. Remove old vim configs:
-  `rm -rf ~/.vim && rm ~/.vimrc`
+  ```
+  rm -rf ~/.vim && rm ~/.vimrc
+  ```
 
 3. Clone vim configs:
-  `git clone https://github.com/thiagov/vimfiles.git ~/.vim`
+  ```
+  git clone https://github.com/thiagov/vimfiles.git ~/.vim
+  ```
 
 4. Initialize submodules:
-  `git submodule update --init`
+  ```
+  git submodule update --init
+  ```
 
 5. Symlink vim config:
-  `ln -s ~/.vim/vimrc ~/.vimrc`
+  ```
+  ln -s ~/.vim/vimrc ~/.vimrc
+  ```
 
 6. Copy config.vim sample:
-  `cp ~/.vim/config.vim.example ~/.vim/config.vim`
+  ```
+  cp ~/.vim/config.vim.example ~/.vim/config.vim
+  ```
 
 7. Compile command-t:
   ```

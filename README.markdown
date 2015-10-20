@@ -30,7 +30,7 @@
   cp ~/.vim/config.vim.example ~/.vim/config.vim
   ```
 
-7. Compile command-t:
+7. Compile CommandT:
   ```
   cd ~/.vim/bundle/command-t/ruby/command-t
   ruby extconf.rb

@@ -37,6 +37,7 @@ map <leader>s? z=
 map <F2> :NERDTreeToggle<cr>
 map <F3> :BufExplorer<cr>
 map <F5> :ToggleScratch<cr>
+map <F6> :CommandT<cr>
 
 " Pesquisa de API
 map RB :call OpenRubyDoc(expand('<cword>'))<CR>

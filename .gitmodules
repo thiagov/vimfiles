@@ -49,9 +49,3 @@
 [submodule "bundle/html5"]
 	path = bundle/html5
 	url = https://github.com/othree/html5.vim
-[submodule "command-t"]
-	path = command-t
-	url = https://github.com/wincent/command-t.git
-[submodule "vim-rooter"]
-	path = vim-rooter
-	url = https://github.com/airblade/vim-rooter.git

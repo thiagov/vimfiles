@@ -25,5 +25,7 @@
   make
   ```
   Note: If you are an RVM or rbenv user, you must build CommandT using the same version of Ruby that Vim itself is linked against. You can find out the version that Vim is linked against by issuing following command inside Vim:
-  ```:ruby puts "#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}"```
+  ```
+  :ruby puts "#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}"
+  ```
   You can either set your version of Ruby to the output of the above command and then build Command-T, or re-build Vim with a version of Ruby you prefer.

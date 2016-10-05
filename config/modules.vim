@@ -28,6 +28,15 @@ let g:sparkup = "~/.vim/bundle/sparkup/bin/sparkup"
 " snipMate
 source ~/.vim/support/support_functions.vim
 
+" syntastic java
+let g:syntastic_java_javac_options='-Xlint -encoding Cp1252'
+let g:syntastic_java_javac_config_file_enabled=0
+"let g:syntastic_java_javac_custom_classpath_command="ruby ~/.vim/support/output_classpath.rb"
+
+" command-t
+let g:CommandTSCMDirectories=".metadata"
+let g:CommandTWildIgnore=&wildignore . ",*.class,*/target/*"
+
 " NERDTree
 let NERDTreeShowBookmarks=1
 

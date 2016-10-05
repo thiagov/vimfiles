@@ -48,3 +48,8 @@
     " JAVA
     """"""""""""""""""""""""""""
     autocmd FileType java set ai sw=4 st=4 ts=4 et
+
+    """"""""""""""""""""""""""""
+    " JAVASCRIPT
+    """"""""""""""""""""""""""""
+    autocmd FileType javascript set ai sw=4 st=4 ts=4 et

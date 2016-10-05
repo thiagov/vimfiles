@@ -8,6 +8,16 @@ require 'pp'
 def print_project_classpath(project_dir, included = {})
   begin
     workspace_dir = File.expand_path("..", project_dir)
+    #####
+    # Necessary when versioning according to egit!
+    while (!File.directory?("#{workspace_dir}/.metadata"))
+      workspace_dir = File.expand_path("..", workspace_dir)
+    end
+    if (!File.file?("#{project_dir}/.classpath"))
+      name = project_dir.split("/").last
+      project_dir = "#{project_dir}/#{name}"
+    end
+    #####
     classpath = File.open("#{project_dir}/.classpath")
     doc = Nokogiri::XML(classpath)
 
@@ -24,7 +34,11 @@ def print_project_classpath(project_dir, included = {})
 
       # Bibliotecas
       teste = doc.xpath('//classpath/classpathentry[@kind = "lib"]').each do |x|
-        puts "#{workspace_dir}#{x['path']}"
+        if "#{workspace_dir}".scan(/\/$/i).empty? && "#{x['path']}".scan(/^\//i).empty?
+          puts "#{project_dir}/#{x['path']}"
+        else
+          puts "#{workspace_dir}#{x['path']}"
+        end
       end
 
       included[project_dir] = true
@@ -35,6 +49,23 @@ def print_project_classpath(project_dir, included = {})
 end
 
 current_dir = Dir.pwd
+#####
+# Necessary when versioning according to egit!
+# proj_name
+#  \
+#   .git
+#   proj_name
+if (!File.file?("#{current_dir}/.classpath"))
+  name = current_dir.split("/").last
+  if Dir.entries(current_dir).include?(name)
+    current_dir = "#{current_dir}/#{name}"
+  end
+end
+if current_dir == "/home/thiagov/Workspaces/mars-bhiss-workspace/bhiss-cert-digital"
+  current_dir = "#{current_dir}/bhiss-cert-digital"
+end
+#####
+
 next_dir    = File.expand_path("..", current_dir)
 while (!File.file?("#{current_dir}/.classpath") && next_dir != current_dir)
   current_dir = next_dir

@@ -42,7 +42,7 @@
     """"""""""""""""""""""""""""
     " HTML  
     """"""""""""""""""""""""""""
-    autocmd FileType html,xhtml set ai sw=4 st=4 ts=4 et
+    autocmd FileType html,xhtml,xml set ai sw=4 st=4 ts=4 et
 
     """"""""""""""""""""""""""""
     " JAVA

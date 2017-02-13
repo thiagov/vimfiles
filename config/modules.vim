@@ -21,6 +21,9 @@ let g:sparkup = "~/.vim/bundle/sparkup/bin/sparkup"
 " snipMate
 source ~/.vim/support/support_functions.vim
 
+" acp support for snipMate
+let g:acp_behaviorSnipmateLength=2
+
 " NERDTree
 let NERDTreeShowBookmarks=1
 

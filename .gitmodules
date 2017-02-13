@@ -58,3 +58,21 @@
 [submodule "bundle/vim-java-get-set"]
 	path = bundle/vim-java-get-set
 	url = https://github.com/Dinduks/vim-java-get-set.git
+[submodule "bundle/vim-l9--acp-dependency"]
+	path = bundle/vim-l9--acp-dependency
+	url = https://github.com/eparreno/vim-l9.git
+[submodule "bundle/vim-acp"]
+	path = bundle/vim-acp
+	url = https://github.com/othree/vim-autocomplpop.git
+[submodule "bundle/tlib_vim--snipmate-dep"]
+	path = bundle/tlib_vim--snipmate-dep
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/vim-addon-mw-utils--snipmate-dep"]
+	path = bundle/vim-addon-mw-utils--snipmate-dep
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/vim-snippets"]
+	path = bundle/vim-snippets
+	url = https://github.com/honza/vim-snippets.git
+[submodule "bundle/vim-snipmate"]
+	path = bundle/vim-snipmate
+	url = https://github.com/garbas/vim-snipmate.git

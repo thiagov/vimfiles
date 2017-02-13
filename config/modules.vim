@@ -42,3 +42,6 @@ let NERDTreeShowBookmarks=1
 
 " Ctags
 set tags=./tags;
+
+" Rooter
+let g:rooter_manual_only = 1

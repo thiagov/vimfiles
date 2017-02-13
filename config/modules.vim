@@ -1,12 +1,6 @@
 " rails.vim
 let g:rails_default_file='config/database.yml'
 
-" gist.vim
-let g:gist_clip_command = 'xclip -selection clipboard'
-let g:gist_detect_filetype = 1
-let g:gist_open_browser_after_post = 1
-let g:gist_browser_command = 'open %URL%'
-
 " Scratch 
 let g:scratch_file="~/.vim/scratch"
 
@@ -18,7 +12,6 @@ let Tlist_Use_Right_Window = 1 " Project uses the left window
 let Tlist_File_Fold_Auto_Close = 1 " Close folds for inactive files
 let Tlist_Sort_Type = "name"
 let Tlist_Show_Menu = 1
-map <F4> :TlistToggle<cr>
 set tags+="tags"
 set tags+="tmp/tags"
 

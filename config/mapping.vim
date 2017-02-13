@@ -36,6 +36,7 @@ map <leader>s? z=
 
 map <F2> :NERDTreeToggle<cr>
 map <F3> :BufExplorer<cr>
+map <F4> :TlistToggle<cr>
 map <F5> :ToggleScratch<cr>
 map <F6> :CommandT<cr>
 

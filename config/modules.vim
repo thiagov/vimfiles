@@ -21,6 +21,9 @@ let g:sparkup = "~/.vim/bundle/sparkup/bin/sparkup"
 " snipMate
 source ~/.vim/support/support_functions.vim
 
+" acp support for snipMate
+let g:acp_behaviorSnipmateLength=2
+
 " syntastic java
 let g:syntastic_java_javac_options='-Xlint -encoding Cp1252'
 let g:syntastic_java_javac_config_file_enabled=0

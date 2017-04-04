@@ -48,3 +48,9 @@
     " JAVA
     """"""""""""""""""""""""""""
     autocmd FileType java set ai sw=4 st=4 ts=4 et
+
+    """"""""""""""""""""""""""""
+    " TYPESCRIPT
+    """"""""""""""""""""""""""""
+    autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+

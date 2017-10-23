@@ -1,10 +1,10 @@
 " rails.vim
 let g:rails_default_file='config/database.yml'
 
-" Scratch 
+" Scratch
 let g:scratch_file="~/.vim/scratch"
 
-" TagList 
+" TagList
 "let Tlist_Ctags_Cmd='/usr/bin/ctags' " point taglist to ctags
 let Tlist_GainFocus_On_ToggleOpen = 1 " Focus on the taglist when its toggled
 let Tlist_Close_On_Select = 1 " Close when something's selected
@@ -55,3 +55,8 @@ let g:JavaComplete_ImportOrder = ['br.gov.', 'com.', 'java.', 'javax.', 'net.', 
 nmap <leader>ji <Plug>(JavaComplete-Imports-AddMissing)
 inoremap <C-Space> <C-x><C-o>
 inoremap <C-@> <C-x><C-o>
+
+" Vim airline
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline#extensions#tabline#show_buffers = 0

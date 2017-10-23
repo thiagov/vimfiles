@@ -50,7 +50,12 @@
     autocmd FileType java set ai sw=4 st=4 ts=4 et
 
     """"""""""""""""""""""""""""
+    " JAVASCRIPT
+    """"""""""""""""""""""""""""
+    autocmd FileType javascript set ai sw=4 st=4 ts=4 et
+
+    """"""""""""""""""""""""""""
     " TYPESCRIPT
     """"""""""""""""""""""""""""
-    autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
-
+    autocmd FileType typescript set ai sw=2 st=2 ts=2 et
+    " autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript

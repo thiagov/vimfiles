@@ -101,6 +101,8 @@ set hlsearch
 set lbr
 set tw=500
 
+set tabstop=4
+
 let mapleader=leader_key
 let g:mapleader=leader_key
 let g:syntastic_enable_signs=1

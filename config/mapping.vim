@@ -45,3 +45,8 @@ map RB :call OpenRubyDoc(expand('<cword>'))<CR>
 map RR :call OpenRailsDoc(expand('<cword>'))<CR>
 map RS :call OpenRspecDoc(expand('<cword>'))<CR>
 map JJ :call OpenJqueryDoc(expand('<cword>'))<CR>
+
+" Utilitarios
+nnoremap <leader>" viw<esc>a"<esc>bi"<esc>lel   " Coloca palavra entre aspas duplas
+nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel   " Coloca palavra entre aspas simples
+" nnoremap <space> za "TODO: pesquisar sobre folding

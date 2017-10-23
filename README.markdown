@@ -30,7 +30,7 @@
   cp ~/.vim/config.vim.example ~/.vim/config.vim
   ```
 
-7. Install powerline fonts
+7. Install powerline fonts:
   ```
   git clone https://github.com/powerline/fonts
   cd fonts

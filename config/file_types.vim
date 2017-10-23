@@ -53,3 +53,8 @@
     " JAVASCRIPT
     """"""""""""""""""""""""""""
     autocmd FileType javascript set ai sw=4 st=4 ts=4 et
+
+    """"""""""""""""""""""""""""
+    " TYPESCRIPT
+    """"""""""""""""""""""""""""
+    autocmd FileType typescript set ai sw=2 st=2 ts=2 et

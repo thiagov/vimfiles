@@ -76,3 +76,9 @@
 [submodule "bundle/vim-snipmate"]
 	path = bundle/vim-snipmate
 	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/typescript-vim"]
+	path = bundle/typescript-vim
+	url = https://github.com/leafgarland/typescript-vim.git
+[submodule "bundle/vim-javacomplete2"]
+	path = bundle/vim-javacomplete2
+	url = https://github.com/artur-shaik/vim-javacomplete2.git

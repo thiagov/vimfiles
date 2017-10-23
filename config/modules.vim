@@ -24,14 +24,20 @@ source ~/.vim/support/support_functions.vim
 " acp support for snipMate
 let g:acp_behaviorSnipmateLength=2
 
-" syntastic java
-let g:syntastic_java_javac_options='-Xlint -encoding Cp1252'
+" Syntastic with java
 let g:syntastic_java_javac_config_file_enabled=0
+"let g:syntastic_java_javac_options='-Xlint -encoding Cp1252'
 "let g:syntastic_java_javac_custom_classpath_command="ruby ~/.vim/support/output_classpath.rb"
+let g:syntastic_java_checkers = ['javac', 'checkstyle']
+let g:syntastic_java_checkstyle_classpath = "~/.vim/support/checkstyle-7.6.1-all.jar"
+let g:syntastic_java_checkstyle_conf_file = "~/.vim/support/google-checkstyle.xml"
+
+" Syntastic with typescript
+let g:syntastic_typescript_checkers = ['tslint', 'tsc']
 
 " command-t
 let g:CommandTSCMDirectories=".metadata"
-let g:CommandTWildIgnore=&wildignore . ",*.class,*/target/*"
+let g:CommandTWildIgnore=&wildignore . ",*.class,*/target/*,*/node_modules/*"
 
 " NERDTree
 let NERDTreeShowBookmarks=1
@@ -40,4 +46,13 @@ let NERDTreeShowBookmarks=1
 set tags=./tags;
 
 " Rooter
-let g:rooter_manual_only = 1
+" let g:rooter_manual_only = 1
+
+" javacomplete2
+autocmd FileType java setlocal omnifunc=javacomplete#Complete
+let g:JavaComplete_EnableDefaultMappings = 0
+let g:JavaComplete_ImportSortType = 'packageName'
+let g:JavaComplete_ImportOrder = ['br.gov.', 'com.', 'java.', 'javax.', 'net.', 'org.']
+nmap <leader>ji <Plug>(JavaComplete-Imports-AddMissing)
+inoremap <C-Space> <C-x><C-o>
+inoremap <C-@> <C-x><C-o>

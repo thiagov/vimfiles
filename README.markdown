@@ -30,7 +30,7 @@
   cp ~/.vim/config.vim.example ~/.vim/config.vim
   ```
 
-8. Install powerline fonts
+7. Install powerline fonts
   ```
   git clone https://github.com/powerline/fonts
   cd fonts
@@ -38,7 +38,7 @@
   ```
   Change terminal to use one of the pre-patched fonts.
 
-7. Compile CommandT:
+8. Compile CommandT:
   ```
   cd ~/.vim/bundle/command-t/ruby/command-t
   ruby extconf.rb

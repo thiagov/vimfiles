@@ -14,12 +14,13 @@ let g:browser = 'firefox -new-tab '
 let g:clip_command = "xclip -selection clipboard"   " Linux
 
 " Vim style settings
-"colorscheme solarized                              " Set you default color schema
-"set background=dark
-"set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
-"let g:solarized_termcolors=256
-colorscheme vividchalk                              " Set you default color schema
-set gfn = "Monaco 11"                               " Set you font style
+colorscheme solarized                              " Set you default color schema
+set background=dark
+set gfn=DejaVu\ Sans\ Mono\ for\ Powerline\ 10
+let g:airline_theme='zenburn'
+let g:solarized_termcolors=256
+" let g:airline_theme='solarized'
+" let g:airline_solarized_bg='dark'
 
 " Github integration
 let g:github_user = "insert here you github user name"

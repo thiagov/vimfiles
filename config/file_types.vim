@@ -58,5 +58,5 @@
     """"""""""""""""""""""""""""
     " TYPESCRIPT
     """"""""""""""""""""""""""""
-    " autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
+    autocmd BufNewFile,BufRead *.ts setlocal filetype=typescript
     autocmd FileType typescript set ai sw=2 st=2 ts=2 et

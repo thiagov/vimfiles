@@ -29,3 +29,5 @@ let g:github_token = ""
 " Syntatic Settings
 " Abrir automaticamente a lista de erros e fechá-la quando o erro for corrigido
 let g:syntastic_auto_loc_list = 1
+
+set t_BE=

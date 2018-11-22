@@ -34,6 +34,7 @@
   ```
 
 7. Initialize submodules:
+
 For the complete configuration, use:
   ```
   cd ~/.vim
@@ -59,3 +60,5 @@ you can simply remove the corresponding parameters from the command above.
   ```
   npm -g install typescript
   ```
+
+10. Install java

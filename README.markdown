@@ -5,19 +5,22 @@
   sudo apt-get install exuberant-ctags
   ```
 
-2. Remove old vim configs:
+2. Install powerline fonts:
+  ```
+  git clone https://github.com/powerline/fonts
+  cd fonts
+  ./install.sh
+  ```
+  Change terminal to use one of the pre-patched fonts.
+
+3. Remove old vim configs:
   ```
   rm -rf ~/.vim && rm ~/.vimrc
   ```
 
-3. Clone vim configs:
+4. Clone vim configs:
   ```
   git clone https://github.com/thiagov/vimfiles.git ~/.vim
-  ```
-
-4. Initialize submodules:
-  ```
-  git submodule update --init
   ```
 
 5. Symlink vim config:
@@ -30,15 +33,17 @@
   cp ~/.vim/config.vim.example ~/.vim/config.vim
   ```
 
-7. Install powerline fonts:
+7. Initialize submodules:
+For the complete configuration, use:
   ```
-  git clone https://github.com/powerline/fonts
-  cd fonts
-  ./install.sh
+  cd ~/.vim
+  ./init-basic-submodule.sh javaSupport typescriptSupport commandTSupport
   ```
-  Change terminal to use one of the pre-patched fonts.
+In this case, it is necessary to do **all steps** listed below.
+If you do not wish `CommandT` (fast file navigation), `tsuquyomi` (for typescript support) or `javacomplete2` (java support),
+you can simply remove the corresponding parameters from the command above.
 
-8. Compile CommandT:
+8. Compile CommandT (if using it):
   ```
   cd ~/.vim/bundle/command-t/ruby/command-t
   ruby extconf.rb
@@ -49,3 +54,8 @@
   :ruby puts "#{RUBY_VERSION}-p#{RUBY_PATCHLEVEL}"
   ```
   You can either set your version of Ruby to the output of the above command and then build Command-T, or re-build Vim with a version of Ruby you prefer.
+
+9. Install npm and typescript (if using tsuquyomi):
+  ```
+  npm -g install typescript
+  ```

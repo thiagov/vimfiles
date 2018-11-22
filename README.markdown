@@ -1,6 +1,6 @@
 # Installation
 
-1. Install ctags:
+1. **Install ctags:**
   ```
   sudo apt-get install exuberant-ctags
   ```
